@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main(){
+    int m,d;
+    printf("\nEnter the birth month in number:\t");
+    printf("\n[1]January\n[2]February\n[3]March\n[4]April\n[5]May\n[6]June\n[7]July\n[8]August\n[9]September\n[10]October\n[11]November\n[12]December\n");
+    scanf("%d", &m);
+    printf("\nEnter the birth date:\n");
+    scanf("%d", &d);
+
+    if ((m==3 && d>=21 && d<=31) || (m==4 && d>=1 && d<=19)){
+            printf("Zodiac sign is Aries");
+    }
+    else if ((m==4 && d>=20 && d<=30) || (m==5 && d>=1 && d<=20)){
+            printf("Zodiac sign is Taurus");
+    }
+    else if ((m==5 && d>=21 && d<=31) || (m==6 && d>=1 && d<=21)){
+            printf("Zodiac sign is Gemini");
+    }
+    else if ((m==6 && d>=22 && d<=30) || (m==7 && d>=1 && d<22)){
+            printf("Zodiac sign is Cancer");
+    }
+    else if ((m==7 && d>=23 && d<=31) || (m==8 && d>=1 && d<=22)){
+            printf("Zodiac sign is Leo");
+    }
+    else if ((m==8 && d>=23 && d<=31) || (m==9 && d>=1 && d<=22)){
+            printf("Zodiac sign is Virgo");
+    }
+    else if ((m==9 && d>=23 && d<=30) || (m==10 && d>=1 && d<=23)){
+            printf("Zodiac sign is Libra");
+    }
+    else if ((m==10 && d>=24 && d<=31) || (m==11 && d>=1 && d<=21)){
+            printf("Zodiac sign is Scorpius");
+    }
+    else if ((m==11 && d>=22 && d<=30) || (m==12 && d>=1 && d<=21)){
+            printf("Zodiac sign is Sagittarius");
+    }
+    else if ((m==12 && d>=22 && d<=31) || (m==1 && d>=1 && d<=19)){
+            printf("Zodiac sign is Capricorn");
+    }
+    else if ((m==1 && d>=20 && d<=31) || (m==2 && d>=1 && d<=18)){
+            printf("Zodiac sign is Aquarius");
+    }
+    else if ((m==2 && d>=19 && d<=28) || (m==3 && d>=1 && d<=20)){
+            printf("Zodiac sign is Pisces");
+    }
+    else{
+        printf("Invalid input");
+    }
+    return 0;
+  }
+
+
